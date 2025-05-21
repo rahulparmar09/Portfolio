@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.navbar {
+    background-color: #EDEADE;
+    /* position: relative; */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-left: 10px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+    margin-right: 20px;
+}
+
+.offcanvas-body .nav-link:hover {
+    background-color: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar button {
+    color: white;
+    border: none;
+}
+
+/* mode */
+.mdd i {
+    position: absolute;
+    right: 10px;
+    top: 15%;
+    position: fixed;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+    background-color: #00ABF0;
+    cursor: pointer;
+}
+
+.home h1 {
+    color: #00ABF0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.home h4 {
+    color: #00ABF0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.home h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 30px;
+    /* color: #333; */
+}
+
+.home h3 span {
+    color: #ffa500;
+}
+
+.home p {
+    font-weight: 400;
+}
+
+.star i {
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid black;
+    /* color: black; */
+    margin: 10px 10px 0 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.star i:hover {
+    background: #00ABF0;
+}
+
+.photo {
+    max-width: 100%;
+    width: 100%;
+    max-height: 600px;
+    margin: auto;
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #00ABF0;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* about */
+.about {
+    /* background-color: white; */
+    margin-top: 50px;
+}
+
+.main-txt {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-txt h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #00ABF0;
+}
+
+.photos img {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    border: 5px solid #00ABF0;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.about p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p span {
+    color: blue;
+
+}
+
+/* skill */
+.skill h4 {
+    font-weight: 600;
+
+}
+
+.skill p {
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.pro {
+    text-align: start;
+    margin-top: 20px;
+}
+
+.text {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text i {
+    color: #00ABF0;
+    font-size: 30px;
+}
+
+.text span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* education */
+.container {
+    text-transform: capitalize;
+}
+
+.container i {
+    top: 2px;
+    left: -35px;
+    font-size: 22px;
+}
+
+.custom-border-start {
+    border-left: 3px solid #0d6efd;
+    padding-left: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.ex-me {
+    padding-top: 50px;
+}
+
+/* .ex-me {
+    padding-top: 50px;
+} */
+
+/* all */
+/* .pro li a {
+    border: 2px solid #00abf0;
+    margin: 8px;
+    border-radius: 20px;
+    color: #00abf0;
+    text-decoration: none;
+
+}
+
+.pro li a:hover {
+    background-color: #00abf0;
+    color: #ffffff;
+}
+
+.gallary .image-wrapper {
+    width: 100%;
+    border: 5px solid #00abf0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.gallary .image-wrapper img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+} */
+
+/* skill */
+.skill {
+    margin-top: 50px;
+}
+
+.skill h4 {
+    font-weight: 600;
+
+}
+
+.skill p {
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.pro {
+    text-align: start;
+    margin-top: 20px;
+}
+
+.text {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text i {
+    color: #00ABF0;
+    font-size: 30px;
+}
+
+.text span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.pro li a {
+    border: 2px solid #00abf0;
+    margin: 8px;
+    border-radius: 20px;
+    color: #00abf0;
+}
+
+.pro li a:hover,
+.pro li .active {
+    background-color: #00abf0;
+    color: #ffffff;
+}
+
+/* gallary */
+.gallary {
+    margin-top: 50px;
+    display: none;
+}
+
+.gallary .image-wrapper {
+    width: 100%;
+    border: 5px solid #00abf0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.gallary .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .gallary .image-wrapper img {
+        height: 400px;
+    }
+}
+
+.packages {
+    padding: 40px 0;
+    display: none;
+}
+
+.main-txt h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.main-txt h1 span {
+    color: #ffa500;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: 2px solid #00abf0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    /* height: auto; */
+    height: 550px;
+    transition: transform 0.2s linear;
+}
+
+@media (max-width: 1000px) {
+    .packages .card {
+        height: auto;
+    }
+}
+
+.packages .card:hover {
+    transform: scale(1.02);
+}
+
+.packages .card img {
+    border-radius: 2px;
+    /* object-fit: cover; */
+    /* object-position: center; */
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.badge {
+    background: #2e3241;
+    /* color: cornflowerblue; */
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.badge img {
+    width: 20px;
+    height: 20px;
+}
+
+.badge:hover {
+    background-color: #3b3f51;
+    cursor: default;
+}
+
+/* contact */
+.book {
+    /* background-color: #f9f9f9; */
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    font-weight: 600;
+    color: #00ABF0;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 450px;
+    margin-top: 10px;
+    border: 3px solid #0d6efd;
+
+    iframe {
+        object-fit: cover;
+        height: 100%;
+        border-radius: 10px;
+        object-position: top;
+    }
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    margin-top: 15px;
+    /* color: black; */
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 15px;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    border: none;
+}
+
+.book .submit:hover {
+    width: 170px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0a2a3c;
+    color: #ededed;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: #00abf0;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ededed;
+    transform: scale(1.1);
+}
+
+
+/* toogle dark */
+/* bg color #15202B #192734 */
+
+body.dark-mode {
+    background-color: #0b0b23;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .nav-link {
+    color: #00abf0;
+}
+
+.dark-mode .nav-link:hover {
+    color: #fff;
+}

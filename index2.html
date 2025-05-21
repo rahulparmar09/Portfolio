@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index2</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Port<span>folio</span></a>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-5">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link ab" href="#About">About</a></li>
+            <li class="nav-item"><a class="nav-link sk" href="#Education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Button -->
+      <!-- <button type="button" class="btn btn-success d-none d-lg-block me-3" data-bs-toggle="modal"
+        data-bs-target="#loginModal">
+        Login
+      </button> -->
+
+      <!-- <div class="form-check form-switch me-3">
+        <input class="form-check-input" type="checkbox" id="themeSwitch">
+        <label class="form-check-label" for="themeSwitch">Dark Mode</label>
+      </div> -->
+
+      <!-- mode -->
+      <div id="toglu" class="mdd" style="cursor: pointer;">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-lg-6 d-none d-lg-block">
+              <img src="https://img.freepik.com/premium-photo/vibrant-green-herbal-tea-leaves_930122-548.jpg"
+                class="img-fluid h-100 w-100" alt="Contact Image" style="object-fit: cover;" />
+            </div>
+            <div class="col-lg-6 p-4">
+              <h5 class="modal-title mb-4" id="loginModalLabel">Let's talk</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section class="home py-5 ani" id="home">
+    <div class="container">
+      <div class="row align-items-center my-5 g-4">
+        <div class="col-12 col-md-6 text-center text-md-start px-4 col">
+          <h4>Hello I'm</h1>
+            <h1>Rahul Parmar</h1>
+            <h3>And I'm a <span class="auto"></span></h3>
+            <p>They possess skills in programming languages like HTML, CSS, and JavaScript for the front-end, and
+              languages like Python, Node.js, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
+              expedita.</p>
+            <div class="bt">
+              <button type="button" class="btn btn-warning  mt-3"><i class="fa-solid fa-download"></i>
+                Download CV</button>
+              <button type="button" class="btn btn-outline-danger mx-2 mt-3" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Let's talk</button>
+
+            </div>
+            <div class="star">
+              <i class="fa-brands fa-github"></i>
+              <i class="fab fa-twitter" aria-label="Twitter"></i>
+              <i class="fab fa-instagram" aria-label="Instagram"></i>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 text-center col">
+          <div class="photo box">
+            <!-- <img
+              src="https://img.freepik.com/premium-vector/cute-boy-smiling-cartoon-kawaii-boy-illustration-boy-avatar-happy-kid_1001605-3452.jpg"
+              alt="Rahul Parmar" /> -->
+            <img src="rahul.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- About -->
+  <section class="about ani" id="About">
+    <div class="main-txt">
+      <h1>About</h1>
+    </div>
+    <div class="container">
+      <div class="row align-items-center my-2 pb-5 g-4">
+        <div class="col-12 col-md-6 text-center col">
+          <div class="photos">
+            <img src="rr.jpg" alt="Rahul Parmar" />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 text-start text-md-start px-4 ms-4 ms-md-0 col box">
+          <p>
+            I'm Rahul Parmar, a passionate Full Stack Developer skilled in both frontend and backend technologies. I
+            enjoy building responsive websites, intuitive user interfaces, and scalable backend systems.Always curious,
+            always learning.</p>
+
+          <p class=""><span>Email:</span> rahulparmar0u@gmail.com</p>
+          <p class=""><span>Place:</span> Ahmedabad, Gujarat- 382350</p>
+
+
+
+
+
+          <button type="button" class="btn btn-primary  mt-3">More About Me</button>
+        </div>
+      </div>
+  </section>
+
+  <!-- Skill -->
+  <!-- <section class="skill" id="Skills">
+    <div class="main-txt">
+      <h1>My Skills</h1>
+    </div>
+    <div class="container">
+      <div class="row align-items-start"> -->
+  <!-- Left Skills -->
+  <!-- <div class="col-12 col-lg-6">
+          <h4>Frontend Skills</h4>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML 5</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 100%">100%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS 3</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-primary" style="width: 100%">100%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-bootstrap"></i>
+              <span>Bootstrap 5</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 95%">95%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+            </div>
+          </div>
+        </div> -->
+
+  <!-- Right Skills -->
+  <!-- <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+          <h4>Backend & Tools</h4>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-react"></i>
+              <span>React JS</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 95%">95%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-dark" style="width: 90%">90%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 90%">85%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-secondary" style="width: 70%">70%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- education -->
+  <section class="container-fluid py-5 ">
+    <div class="container">
+      <div class="main-txt">
+        <h1 id="Education">My Educations</h1>
+      </div>
+
+      <div class="row align-items-center mt-5">
+        <!-- Education Column -->
+        <div class="col-lg-6 ani">
+          <h3 class="mb-4 ">My Education</h3>
+          <div class="custom-border-start">
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Vedant International School, Nikol</h5>
+              <p class="mb-2"><strong>8th to 12th</strong> <small>2016 - 2022</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+
+
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Bachelor of Engineering</h5>
+              <p class="mb-2"><strong>LDRP Institute of Technology and Research</strong> <small>2022 - 2026</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Master of Engineering</h5>
+              <p class="mb-2"><strong>IIT Madras</strong> <small>2026 - 2028</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Column -->
+        <div class="col-lg-6 sc box">
+          <h3 class="mb-4 ">My Experience</h3>
+          <div class="custom-border-start">
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Full Stack Development</h5>
+              <p class="mb-2"><strong>Red & White Multimedia Education</strong> <small>2025 - 2026</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+
+
+
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Back-End Developer</h5>
+              <p class="mb-2"><strong>Amazon</strong> <small>2027 - 2028</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+
+            <div class="position-relative ex-me mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute"></i>
+              <h5 class="font-weight-bold mb-1">Senior Back-End Developer</h5>
+              <p class="mb-2"><strong>Google</strong> <small>2028</small></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, magnam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- all -->
+  <!-- <section class="all">
+    <div class="pro">
+      <ul class="nav justify-content-center rounded">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Certificate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project</a>
+        </li> 
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- Gallery -->
+  <!-- <section class="gallary" id="Gallary">
+    <div class="container">
+
+      <div class="row mt-4">
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/20yKWX3x/simple.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="WhatsApp Image 2025-05-19 at 18.48.38_c7298a9e.jpg" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/sv1XMwK0/Whats-App-Image-2025-05-19-at-23-43-55-efeb0974.jpg" class="img-fluid" alt="..." />
+          </div>
+        </div>
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/ym0ZVkP3/greet-learning.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+
+  <!-- Navigation -->
+  <section class="all" id="Portfolio box">
+    <div class="pro">
+      <ul class="nav justify-content-center rounded">
+        <li class="nav-item">
+          <a class="nav-link active ss" aria-current="page" href="#Skills">My Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gg" href="#Gallary">Certificate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pp" href="#Project">Project</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section class="skill " id="Portfolio">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Left Skills -->
+        <div class="col-12 col-lg-6 ani">
+          <h4>Frontend Skills</h4>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML 5</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 100%">100%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS 3</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-primary" style="width: 100%">100%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-bootstrap"></i>
+              <span>Bootstrap 5</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 95%">95%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Skills -->
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0 box">
+          <h4>Backend & Tools</h4>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-react"></i>
+              <span>React JS</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 95%">95%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 90%">90%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 90%">85%</div>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="text">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-secondary" style="width: 70%">70%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery -->
+  <section class="gallary" id="Gallary">
+    <div class="container">
+
+      <div class="row mt-4">
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/20yKWX3x/simple.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="WhatsApp Image 2025-05-19 at 18.48.38_c7298a9e.jpg" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/sv1XMwK0/Whats-App-Image-2025-05-19-at-23-43-55-efeb0974.jpg" class="img-fluid "
+              alt="..." />
+          </div>
+        </div>
+        <div class="col-lg-6 py-3">
+          <div class="image-wrapper">
+            <img src="https://i.ibb.co/ym0ZVkP3/greet-learning.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- packages -->
+  <!-- Packages Section -->
+  <section class="packages" id="Project">
+    <div class="container">
+      <div class="main-txt">
+        <!-- <h1><span>P</span>ackages</h1>  -->
+
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <!-- Card 1 -->
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img
+              src="https://cdn.prod.website-files.com/67e6889f45deb979d7d4374e/67e6889f45deb979d7d454a9_6444e7a7ac08233584d11f98_roamr.webp"
+              height="290px" alt="Eco-Friendly Travel Guide Preview">
+            <div class="card-body">
+              <h3>Eco-Friendly Travel Guide</h3>
+              <p>Eco-Friendly Travel Guide is an innovative travel planning platform designed to enhance
+                the travel experience by providing personalized recommendations for any city.</p>
+              <div class="badge-container">
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                    alt="React" />
+                  React.js
+                </div>
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js" />
+                  Node.js
+                </div>
+                <div class="badge">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB" />
+                  MongoDB
+                </div>
+                <div class="badge">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                    alt="Express.js" />
+                  Express.js
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img
+              src="https://user-images.githubusercontent.com/54992097/166520595-da7587c6-6368-4f02-9e02-940388d03758.png"
+              height="280px" alt="Eco-Friendly Travel Guide Preview">
+            <div class="card-body">
+              <h3>Medical Care Services</h3>
+              <p>Medical care websites provide patients with information about healthcare services,
+                providers, and resources. They also serve as a platform.</p>
+
+              <div class="badge-container">
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                    alt="React" />
+                  React.js
+                </div>
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js" />
+                  Node.js
+                </div>
+                <div class="badge">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB" />
+                  MongoDB
+                </div>
+                <div class="badge">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                    alt="Express.js" />
+                  Express.js
+                </div>
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="Express.js" />
+                  Java
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://s3u.tmimgcdn.com/800x0/u6975116/VCJPf9hV2j4Pq5EeNoE8.png" height="280px"
+              alt="Eco-Friendly Travel Guide Preview">
+            <div class="card-body">
+              <h3>Personal Portfolio</h3>
+              <p>A portfolio website is a curated online space that showcases an individual's or company's
+                best work, offering a platform to demonstrate skills.</p>
+
+              <div class="badge-container">
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                    alt="React" />
+                  Html 5
+                </div>
+                <div class="badge">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                    alt="Node.js" />
+                  Css 3
+                </div>
+                <div class="badge">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="MongoDB" />
+                  JavaScript
+                </div>
+                <div class="badge">
+                  <img src="https://miro.medium.com/v2/resize:fit:800/1*onZhQJU7A3ab6V1sHfMRkQ.jpeg" alt="Express.js" />
+                  Bootstrap 5
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <!-- book -->
+  <section class="book ani" id="Contact">
+    <div class="container">
+
+      <div class="main-text">
+        <h1><span>C</span>ontact Me</h1>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <!-- <img src="https://img.freepik.com/premium-photo/full-shot-travel-concept-with-landmarks_1174912-14721.jpg"
+                            alt=""> -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7557164607597!2d72.66405367963573!3d23.032739925449256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87d240341dfb%3A0x5bb50b5093486309!2sGopinath%20Exotica!5e0!3m2!1sen!2sin!4v1747807487005!5m2!1sen!2sin"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0 y-5 box">
+          <form action="#">
+
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Email" required>
+            <input type="text" class="form-control" placeholder="Subject" required>
+            <!-- <input type="date" class="form-control" placeholder="Leaving" required> -->
+            <textarea class="form-control" rows="5" name="text" placeholder="Message"></textarea>
+            <input type="submit" value="Book Now" class="submit" required>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer box">
+    <div class="footer-container">
+      <div class="footer-text">
+        <p>&copy; 2025 Rahul Parmar. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto", {
+      strings: ["Full Stack Developer", "Frontend Developer", "Backend Developer", "Programmer"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+  <script>
+    ScrollReveal().reveal('.box', {
+      origin: 'right',
+      distance: '50px',
+      duration: 800,
+      delay: 400,
+      easing: 'ease-in-out',
+      reset: false  // set to true if you want animation every time you scroll back
+    });
+    ScrollReveal().reveal('.ani', {
+      origin: 'left',
+      distance: '50px',
+      duration: 800,
+      delay: 400,
+      easing: 'ease-in-out',
+      reset: false  // set to true if you want animation every time you scroll back
+    });
+  </script>
+
+
+
+</body>
+
+</html>

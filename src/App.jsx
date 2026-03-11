@@ -1,50 +1,70 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Education from "./Components/Education";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const App = () => {
+import Navbar from "./components/Navbar";
+import MovieList from "./components/MovieList";
+import MovieDetails from "./components/MovieDetails";
+import MovieSearch from "./components/MovieSearch";
+import Login from "./pages/Login";
+import PrivateRoute from "./components/PrivateRoute";
+
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const loginStatus = localStorage.getItem("isLoggedIn");
+    if (loginStatus === "true") {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   return (
-    <>
-      <Navbar />
+    <Router>
+      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
-      {/* HOME */}
-      <section id="home" className="min-h-screen">
-        <Hero />
-      </section>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute isLoggedIn={isLoggedIn}>
+              <MovieList />
+            </PrivateRoute>
+          }
+        />
 
-      {/* ABOUT */}
-      <section id="about" className="min-h-screen">
-        <About />
-      </section>
+        <Route
+          path="/movies"
+          element={
+            <PrivateRoute isLoggedIn={isLoggedIn}>
+              <MovieList />
+            </PrivateRoute>
+          }
+        />
 
-      {/* SKILLS */}
-      <section id="skills" className="min-h-screen">
-        <Skills />
-      </section>
+        <Route
+          path="/movie/:id"
+          element={
+            <PrivateRoute isLoggedIn={isLoggedIn}>
+              <MovieDetails />
+            </PrivateRoute>
+          }
+        />
 
-      {/* EDUCATION */}
-      <section id="education" className="min-h-screen">
-        <Education />
-      </section>
+        <Route
+          path="/search"
+          element={
+            <PrivateRoute isLoggedIn={isLoggedIn}>
+              <MovieSearch />
+            </PrivateRoute>
+          }
+        />
 
-      {/* PROJECTS */}
-      <section id="projects" className="min-h-screen">
-        <Projects />
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="min-h-screen">
-        <Contact />
-      </section>
-
-
-    </>
+        <Route
+          path="/login"
+          element={<Login setIsLoggedIn={setIsLoggedIn} />}
+        />
+      </Routes>
+    </Router>
   );
-};
-
-export default App;
+}
+export default App

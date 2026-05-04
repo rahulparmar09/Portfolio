@@ -16,7 +16,7 @@ const projects = [
     desc: "A full-stack e-commerce platform with product listing, cart system, secure checkout, multiple payment options, and real-time order tracking with admin management.",
     img: "/Ferrano.png",
     tech: ["React.js", "Tailwind Css", "Node.js", "Express.js", "MongoDb"],
-    github: "https://github.com/rahulparmar2004/Electro",
+    github: "https://github.com/rahulparmar09/Ecommerce-store-ferrano-Mern",
   },
   {
     title: "Blogify – AI-Powered Blog Platform",
